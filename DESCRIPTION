@@ -1,0 +1,16 @@
+Package: llusmstats
+Type: Package
+Title: Helper Functions for LLU SM Stats Classes
+Version: 0.1.0
+Authors@R: person("Richard", "Lindsey", , "richard.c.lindsey@ricompute.com", c("aut", "cre"))
+Maintainer: Richard Lindsey <richard.c.lindsey@ricompute.com>
+Description: Helper functions for statistics classes in the Loma Linda University
+    School of Medicine Department of Basic Sciences.
+License: GPL-3 | file LICENSE
+URL: https://github.com/ricompute/llusmstats
+BugReports: https://github.com/ricompute/llusmstats/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: MASS,
+    stringr

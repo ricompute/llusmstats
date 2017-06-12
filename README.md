@@ -6,7 +6,7 @@ Basic Sciences.
 
 ## Installation
 
-To get install the package:
+To install the package:
 
 ```r
 # If devtools is not installed, 

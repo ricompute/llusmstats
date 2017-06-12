@@ -1,6 +1,4 @@
----
-title: "llusmstats"
----
+# llusmstats
 
 This completely unofficial package includes miscellaneous helper functions for
 statistics classes in the Loma Linda University School of Medicine Department of

@@ -18,7 +18,7 @@ The output will be decimal odds. If \code{print = TRUE}, the decimal
     odds will be returned invisibly.
 }
 \description{
-\code{p_to_o} converts decimal probability to odds.
+\code{p_to_o()} converts decimal probability to odds.
 }
 \details{
 If \code{print = TRUE}, an explanatory sentence will be printed in the

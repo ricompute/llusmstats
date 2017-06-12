@@ -2,3 +2,5 @@
 
 export(o_to_p)
 export(p_to_o)
+export(pairwise_bonf_confint)
+export(pairwise_lsd_confint)

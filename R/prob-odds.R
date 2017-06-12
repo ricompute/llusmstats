@@ -1,6 +1,6 @@
 #' Convert probability to odds.
 #'
-#' \code{p_to_o} converts decimal probability to odds.
+#' \code{p_to_o()} converts decimal probability to odds.
 #'
 #' If \code{print = TRUE}, an explanatory sentence will be printed in the
 #' form "If the probability of an event occuring is <probability>, the odds

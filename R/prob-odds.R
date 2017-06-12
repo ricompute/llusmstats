@@ -82,8 +82,8 @@ o_to_p <- function(odds, print = FALSE) {
     } else if (class(odds) %in% c("numeric", "integer")) {
         odds_float <- odds
     } else {
-        stop(paste("Invalid odds format.",
-                   "Valid options are character ratio odds (e.g., \"3:1\")",
+        stop(paste("Invalid odds format.\n",
+                   "Valid options are character ratio odds (e.g., \"3:1\")\n",
                    "or numeric decimal odds (e.g., 0.5 or 9)."))
     }
     probability <- (odds_float / (1 + odds_float))

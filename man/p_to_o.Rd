@@ -15,7 +15,7 @@ the calculated odds for the given probaiblity.}
 }
 \value{
 The output will be decimal odds. If \code{print = TRUE}, the decimal
-    odds will be returned invisibly.
+  odds will be returned invisibly.
 }
 \description{
 \code{p_to_o()} converts decimal probability to odds.

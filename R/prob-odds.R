@@ -7,11 +7,11 @@
 #' are <decimal odds> or <ratio:odds>."
 #'
 #' @param probability A single numeric decimal probability (i.e., a number
-#'     between 0 and 1).
+#'   between 0 and 1).
 #' @param print A logical indicating whether to print a sentence description of
-#'     the calculated odds for the given probaiblity.
+#'   the calculated odds for the given probaiblity.
 #' @return The output will be decimal odds. If \code{print = TRUE}, the decimal
-#'     odds will be returned invisibly.
+#'   odds will be returned invisibly.
 #' @seealso \code{\link{o_to_p}} for converting odds to probability.
 #' @examples
 #' p_to_o(0.5)
@@ -62,12 +62,12 @@ p_to_o <- function(probability, print = FALSE) {
 #' is <decimal probability>."
 #'
 #' @param odds A single odds, either in the format of character ratio odds
-#'     (e.g., \code{"3:1"}) or numeric decimal odds (e.g., \code{0.5} or
-#'     \code{9}).
+#'   (e.g., \code{"3:1"}) or numeric decimal odds (e.g., \code{0.5} or
+#'   \code{9}).
 #' @param print A logical indicating whether to print a sentence description of
-#'     the calculated odds for the given probaiblity.
+#'   the calculated odds for the given probaiblity.
 #' @return The output will be a decimal probability. If \code{print = TRUE}, the
-#'     decimal probability will be returned invisibly.
+#'   decimal probability will be returned invisibly.
 #' @seealso \code{\link{p_to_o}} for converting probability to odds.
 #' @examples
 #' o_to_p("9:1")

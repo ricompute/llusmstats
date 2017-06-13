@@ -19,7 +19,7 @@ The output will be a decimal probability. If \code{print = TRUE}, the
     decimal probability will be returned invisibly.
 }
 \description{
-\code{o_to_p} converts decimal or ratio odds to probability.
+\code{o_to_p()} converts decimal or ratio odds to probability.
 }
 \details{
 If \code{print = TRUE}, an explanatory sentence will be printed in the
@@ -31,4 +31,7 @@ o_to_p("9:1")
 o_to_p("3:1", print = TRUE)
 calculated_prob <- o_to_p(0.5, print = TRUE)
 calculated_prob
+}
+\seealso{
+\code{\link{p_to_o}} for converting probability to odds.
 }

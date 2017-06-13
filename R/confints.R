@@ -1,4 +1,4 @@
-#' Produce Pairwise Confidence Intervals After One-way ANOVA.
+#' Produce pairwise confidence intervals after one-way ANOVA.
 #'
 #' \code{pairwise_lsd_confint()} and \code{pairwise_bonf_confint()} produce
 #' Fisher's Least Significant Difference and Bonferroni confidence intervals,
@@ -21,11 +21,16 @@
 #' @examples
 #' iris_aov <- aov(Sepal.Length ~ Species, iris)
 #' pairwise_lsd_confint(iris_aov)
-#' pairwise_bonf_confint(iris_aov)
+#' if (requireNamespace("knitr", quietly = TRUE)) {
+#'     knitr::kable(pairwise_bonf_confint(iris_aov))
+#' } else {
+#'     pairwise_bonf_confint(iris_aov)
+#' }
+#'
 #'
 #' @name confidence_intervals
 
-#' @rdname  confidence_intervals
+#' @rdname confidence_intervals
 #' @export
 pairwise_lsd_confint <- function(aov, level = 0.95) {
     group_by <- names(aov$contrasts)
@@ -65,7 +70,7 @@ pairwise_lsd_confint <- function(aov, level = 0.95) {
     res
 }
 
-#' @rdname  confidence_intervals
+#' @rdname confidence_intervals
 #' @export
 pairwise_bonf_confint <- function(aov, level = 0.95) {
     group_by <- names(aov$contrasts)

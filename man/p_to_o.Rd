@@ -31,3 +31,6 @@ p_to_o(0.1, print = TRUE)
 calculated_odds <- p_to_o(0.9, print = TRUE)
 calculated_odds
 }
+\seealso{
+\code{\link{o_to_p}} for converting odds to probability.
+}

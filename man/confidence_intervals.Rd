@@ -4,7 +4,7 @@
 \alias{confidence_intervals}
 \alias{pairwise_lsd_confint}
 \alias{pairwise_bonf_confint}
-\title{Produce Pairwise Confidence Intervals After One-way ANOVA.}
+\title{Produce pairwise confidence intervals after one-way ANOVA.}
 \usage{
 pairwise_lsd_confint(aov, level = 0.95)
 
@@ -36,6 +36,11 @@ These functions are currently designed to handle only one-way ANOVA objects.
 \examples{
 iris_aov <- aov(Sepal.Length ~ Species, iris)
 pairwise_lsd_confint(iris_aov)
-pairwise_bonf_confint(iris_aov)
+if (requireNamespace("knitr", quietly = TRUE)) {
+    knitr::kable(pairwise_bonf_confint(iris_aov))
+} else {
+    pairwise_bonf_confint(iris_aov)
+}
+
 
 }

@@ -12,6 +12,7 @@
 #'     the calculated odds for the given probaiblity.
 #' @return The output will be decimal odds. If \code{print = TRUE}, the decimal
 #'     odds will be returned invisibly.
+#' @seealso \code{\link{o_to_p}} for converting odds to probability.
 #' @examples
 #' p_to_o(0.5)
 #' p_to_o(0.1, print = TRUE)
@@ -54,7 +55,7 @@ p_to_o <- function(probability, print = FALSE) {
 
 #' Convert odds to probability.
 #'
-#' \code{o_to_p} converts decimal or ratio odds to probability.
+#' \code{o_to_p()} converts decimal or ratio odds to probability.
 #'
 #' If \code{print = TRUE}, an explanatory sentence will be printed in the
 #' form "If the odds of an event occuring are <odds>, the probability
@@ -67,6 +68,7 @@ p_to_o <- function(probability, print = FALSE) {
 #'     the calculated odds for the given probaiblity.
 #' @return The output will be a decimal probability. If \code{print = TRUE}, the
 #'     decimal probability will be returned invisibly.
+#' @seealso \code{\link{p_to_o}} for converting probability to odds.
 #' @examples
 #' o_to_p("9:1")
 #' o_to_p("3:1", print = TRUE)

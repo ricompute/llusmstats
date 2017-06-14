@@ -42,8 +42,8 @@ Plot model residuals vs. fitted values with ggplot2 to assess a model fit.
 \examples{
 mtcars_lm <- lm(mpg ~ wt, mtcars)
 resid_fitted_plot(mtcars_lm)
-resid_fitted_plot(mtcars_lm, type = "unstd")
-resid_fitted_plot(mtcars_lm, type = "both")
+resid_fitted_plot(mtcars_lm, resid_type = "unstd")
+resid_fitted_plot(mtcars_lm, resid_type = "both")
 
 }
 \seealso{

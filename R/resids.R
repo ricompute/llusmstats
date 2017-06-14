@@ -22,9 +22,9 @@
 #' @seealso \code{\link{resid_hist_qq}} for residual histograms and Q-Q plots.
 #' @examples
 #' mtcars_lm <- lm(mpg ~ wt, mtcars)
-#' resid_fitted_plots(mtcars_lm)
-#' resid_fitted_plots(mtcars_lm, type = "unstd")
-#' resid_fitted_plots(mtcars_lm, type = "both")
+#' resid_fitted_plot(mtcars_lm)
+#' resid_fitted_plot(mtcars_lm, type = "unstd")
+#' resid_fitted_plot(mtcars_lm, type = "both")
 #'
 #' @export
 resid_fitted_plot <- function(model, resid_type = "std", outlier_2sd_lines = TRUE,
